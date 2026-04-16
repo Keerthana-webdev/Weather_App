@@ -34,7 +34,6 @@ weather-app/
 ---
 
 ### Setup Instructions
-```
 1️⃣ Clone the repository
 ```
 git clone https://github.com/Keerthana-webdev/Weather_App.git
@@ -43,7 +42,9 @@ git clone https://github.com/Keerthana-webdev/Weather_App.git
 2️⃣ Open the project folder
 
 3️⃣ Get your API key from:
+```
 https://openweathermap.org/api
+```
 
 4️⃣ Replace the API key in `script.js`:
 const apiKey = "YOUR_API_KEY_HERE";
@@ -52,7 +53,6 @@ const apiKey = "YOUR_API_KEY_HERE";
 - Open `index.html` in browser  
 OR  
 - Use Live Server in VS Code  
-```
 ---
 
 ### Live Demo
