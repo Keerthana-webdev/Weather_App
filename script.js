@@ -1,6 +1,6 @@
 const apiKey = "b08fcd0f70df0f28359adbcc2a381743";
 
-// 🌤️ Get Weather
+//Get Weather
 async function getWeather(cityInput) {
     const city = cityInput || document.getElementById("city").value;
 
@@ -18,7 +18,7 @@ async function getWeather(cityInput) {
     getForecast(city);
 }
 
-// 🌡️ Display Weather
+//Display Weather
 function displayWeather(data) {
     const icon = data.weather[0].icon;
 
@@ -31,7 +31,7 @@ function displayWeather(data) {
     `;
 }
 
-// 📅 5-Day Forecast (FIXED)
+//5-Day Forecast 
 async function getForecast(city) {
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
@@ -63,7 +63,7 @@ async function getForecast(city) {
     document.getElementById("forecast").innerHTML = forecastHTML;
 }
 
-// 📍 Location
+//Location
 function getLocation() {
     navigator.geolocation.getCurrentPosition(async (pos) => {
         const lat = pos.coords.latitude;
@@ -79,12 +79,12 @@ function getLocation() {
     });
 }
 
-// 🌙 Dark Mode
+//Dark Mode
 function toggleDarkMode() {
     document.body.classList.toggle("dark");
 }
 
-// 🔍 Suggestions
+//Suggestions
 document.getElementById("city").addEventListener("input", function () {
     const value = this.value;
     const cities = ["Bangalore", "Chennai", "Delhi", "Mumbai", "Hyderabad"];
