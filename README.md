@@ -36,7 +36,9 @@ weather-app/
 ### Setup Instructions
 ```
 1️⃣ Clone the repository
+```
 git clone https://github.com/Keerthana-webdev/Weather_App.git
+```
 
 2️⃣ Open the project folder
 
