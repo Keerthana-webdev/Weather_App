@@ -55,7 +55,7 @@ OR
 
 ### Live Demo
 Check out the live version of this project:  
-🔗https://digital-watch-lemon.vercel.app/
+🔗https://weather-app-gamma-ashen-49.vercel.app
 
 ---
 
