@@ -1,28 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
 body {
-    font-family: Arial;
-    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.card {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 20px;
+    width: 340px;
     text-align: center;
-    padding: 50px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
-.container {
-    background: white;
-    padding: 20px;
+/* TITLE */
+h1 {
+    margin-bottom: 15px;
+}
+
+/* SEARCH */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
     border-radius: 10px;
-    width: 300px;
-    margin: auto;
+    border: none;
+    outline: none;
 }
 
-input {
+.search-box button {
     padding: 10px;
-    width: 70%;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-button {
-    padding: 10px;
+/* BUTTONS */
+.buttons {
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-#weatherResult {
-    margin-top: 20px;
+/* WEATHER */
+#weatherResult img {
+    width: 80px;
+}
+
+#weatherResult h3 {
+    margin: 10px 0;
+}
+
+#weatherResult p {
+    margin: 5px 0;
+}
+
+/* FORECAST */
+.forecast {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.forecast-card {
+    min-width: 60px;
+    background: rgba(255,255,255,0.15);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.forecast-card img {
+    width: 40px;
+}
+
+/* SCROLL HIDE */
+.forecast::-webkit-scrollbar {
+    display: none;
+}
+
+/* SUGGESTIONS */
+#suggestions {
+    list-style: none;
+    margin-top: 5px;
+}
+
+#suggestions li {
+    background: white;
+    color: black;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* DARK MODE */
+.dark {
+    background: linear-gradient(135deg, #141e30, #243b55);
 }
